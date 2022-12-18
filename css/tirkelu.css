@@ -23,7 +23,7 @@ body {
 }
 .container {
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 50px;
   font-family: "Montserrat", sans-serif;
   box-shadow: 0 4px 16px #ccc;
   padding: 25px 50px;
@@ -36,32 +36,32 @@ form {
 form h1 {
   align-self: center;
   margin-bottom: 10px;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 .ati-zhoni-box {
   display: flex;
 }
 .input-box {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   flex-direction: column;
   margin: 8px 10px 15px;
 }
 label {
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 input {
   width: 100%;
   border: none;
-  font-size: 20px;
-  border-bottom: 2px solid #000;
+  font-size: 15px;
+  border-bottom: 1px solid #000;
   background-color: transparent;
   outline: none;
   transition: 0.3s;
 }
 input:focus {
-  border-bottom: 2px solid #1a73a8;
+  border-bottom: 1px solid #1a73a8;
 }
 /* button {
   text-align: center;

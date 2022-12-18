@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BizZhaily</title>
+    <link rel="stylesheet" href="css/2page.css" />
+    <link rel="icon" type="image/x-icon" href="img/icons8-bookmark-100.png" />
+    <script
+      src="https://kit.fontawesome.com/7560a9ef7c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <section>
+      <div class="container">
+        <nav class="navbar">
+          <div class="brand-title">Qazaqwa soile</div>
+          <div class="bars">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </div>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="first_page.html">Basty bet</a></li>
+              <li><a href="aqparattar.html">Aqparattar</a></li>
+              <li><a href="aboutUs.html">Biz zhaily</a></li>
+              <li class="btn"><a href="awu.html">Kiru</a></li>
+              <li class="btn"><a href="tirkelu.html">Tirkelu</a></li>
+            </ul>
+          </div>
+          <div class="buttons">
+            <button id="btn">kiru</button>
+            <button id="btn2">tirkelu</button>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- navbar end -->
+
+    <!-- content -->
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer-content">
+        <h3>Qazaq brand</h3>
+        <p>
+          Bul bizdin brand biz qazaqstandi damitip Adamdarga Qazaqwa uiretkimiz
+          keeledi.Bizdi qoldaniz
+        </p>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+          </li>
+        </ul>
+        <div class="footer-bottom">
+          <p>copyright &copy;2021 <a href="#">foolishdeveloper</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- footer end -->
+    <script>
+      const toggleb = document.getElementsByClassName("bars")[0];
+      const awu = document.getElementById("btn");
+      const tirkelu = document.getElementById("btn2");
+      const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+      toggleb.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+      awu.addEventListener("click", () => {
+        window.location = "awu.html";
+      });
+      tirkelu.addEventListener("click", () => {
+        window.location = "tirkelu.html";
+      });
+    </script>
+  </body>
+</html>
