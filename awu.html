@@ -4,7 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <form onsubmit="login(event)" action="#">
+        <h1>Kirilm Form</h1>
+        <div class="input-box">
+          <input
+            type="text"
+            required
+            id="username"
+            name="username"
+            placeholder="atindi zhaz"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            required
+            id="password"
+            name="password"
+            placeholder="qupia soz"
+          />
+        </div>
+        <button type="submit">kiry</button>
+        <p>Mushede emesizba ? <a href="tirkelu.html">tirkelu</a></p>
+      </form>
+    </div>
+    <script src="js/tirkely.js"></script>
+  </body>
 </html>
