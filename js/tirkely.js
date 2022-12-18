@@ -19,7 +19,6 @@ let cpassword = document.getElementById('cpassword').value;
          return result.text()
          var x = result.text()
          
-      
         // if we want this data to be JSON
         return result.json()
         
