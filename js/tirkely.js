@@ -52,7 +52,7 @@ function login(event){
             // if we want this data to be text
              return result.text()
              var x = result.text()
-             
+             console.log(x);
             // if we want this data to be JSON
             return result.json()
             
@@ -60,9 +60,9 @@ function login(event){
         .then(final_result=>{
             console.log(final_result);
             if(final_result == "Succeess!!"){
-            window.location = "first_page.html";
+                window.location = "first_page.html"
             }else{
-                alert("Error username or password")
+                alert("Error Password and username")
             }
         })
     }
