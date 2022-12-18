@@ -35,6 +35,8 @@ let cpassword = document.getElementById('cpassword').value;
     alert("Error Password") ; 
 }
 }
+// /////////////////////////
+
 
 function login(event){
         event.preventDefault();
@@ -64,6 +66,11 @@ function login(event){
             }
         })
     }
+    const btn = document.querySelector("#btn");
+    const btnText = document.querySelector("#btnText");
     
-
-
+    btn.onclick = () => {
+        btnText.innerHTML = "Rakhmet";
+        btn.classList.add("active");
+    }
+    
