@@ -29,7 +29,7 @@ let cpassword = document.getElementById('cpassword').value;
         if(final_result == "registration Successfully..."){
         window.location = "awu.html";
         }else{
-            alert("Select new username")
+            alert("Error username,email or password")
         }
     })
 }else{
