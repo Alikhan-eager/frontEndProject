@@ -17,6 +17,9 @@ section {
 
   padding-top: 20px;
 }
+.headerali {
+  height: 0vh;
+}
 .container {
   max-width: 80%;
   margin: auto;
@@ -98,19 +101,18 @@ button:hover {
   max-width: 700px;
   line-height: 45px;
   animation: scale 1.5s both;
-  
 }
 .text-box h1 {
   margin: 20px 0;
   box-shadow: 5px 5px 5px black;
   animation: scale 1.5s both;
 }
-.arrow{
+.arrow {
   position: absolute;
-  top: 77%;
+  top: 80%;
   left: 30%;
 }
-.sp{
+.sp {
   text-transform: uppercase;
   font-size: 20px;
   color: whitesmoke;
@@ -123,14 +125,15 @@ button:hover {
     transform: scale(1);
   }
 }
-.rocket{
+.rocket {
   position: absolute;
   margin: 100px 100px 300px 800px;
   position: relative;
   animation: MoveUpDown 1s linear infinite;
 }
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     bottom: 0;
   }
   50% {
@@ -374,7 +377,6 @@ button:hover {
   left: 0;
 }
 .swiper-pagination-bullet {
-  
   background-color: #6e93f7;
   opacity: 1;
 }
