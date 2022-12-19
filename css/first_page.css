@@ -117,11 +117,11 @@ button:hover {
   font-size: 20px;
   color: whitesmoke;
 }
-.punkt{
+.punkt {
   color: black;
   /* box-shadow: 5px 5px 5px 5px; */
 }
-.syzyk{
+.syzyk {
   position: absolute;
   top: 55%;
   left: 4%;
@@ -150,7 +150,7 @@ button:hover {
   }
 }
 /* mobile section  1 */
-@media (max-width: 760px) {
+@media (max-width: 1060px) {
   .btn {
     display: block;
   }
@@ -392,6 +392,11 @@ button:hover {
 .swiper-pagination-bullet-active {
   background-color: #4070f4;
 }
+@media (max-width: 1360px) {
+  .rocket {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .slide-contest {
     margin: 0 10px;
@@ -401,3 +406,24 @@ button:hover {
   }
 }
 /* slider end */
+
+.top {
+  position: fixed;
+  cursor: pointer;
+  z-index: 10;
+  right: 2%;
+  width: 40px;
+  height: 40px;
+  top: 90%;
+  border-radius: 15px;
+  padding: 4px;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-solid {
+  font-size: 30px;
+  color: white;
+  transform: rotate(270deg);
+}
