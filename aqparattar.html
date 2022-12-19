@@ -14,27 +14,51 @@
   </head>
   <body>
     <!-- navbar -->
-    <section>
-      <div class="container">
-        <nav class="navbar">
-          <div class="brand-title">Qazaqwa soile</div>
-          <div class="bars">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-          </div>
-          <div class="navbar-links">
+    <section class="header">
+      <nav class="navbar nav1">
+        <div class="brand-title">Qazaqwa soile</div>
+        <div class="bars">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="first_page.html">Basty bet</a></li>
+            <li><a href="aqparattar.html">Aqparattar</a></li>
+            <li><a href="aboutUs.html">Biz zhaily</a></li>
+            <li class="btn"><a href="awu.html">Kiru</a></li>
+            <li class="btn"><a href="tirkelu.html">Tirkelu</a></li>
+          </ul>
+        </div>
+        <div class="buttons">
+          <button id="btn">kiru</button>
+          <button id="btn2">tirkelu</button>
+        </div>
+      </nav>
+      <div class="container2">
+        <div class="quiz-container" id="quiz">
+          <div class="quiz-header">
+            <h2 id="question">Question Text</h2>
             <ul>
-              <li><a href="first_page.html">Basty bet</a></li>
-              <li><a href="aqparattar.html">Aqparattar</a></li>
-              <li><a href="aboutUs.html">Biz zhaily</a></li>
-              <li class="btn"><a href="awu.html">Kiru</a></li>
-              <li class="btn"><a href="tirkelu.html">Tirkelu</a></li>
+              <li>
+                <input type="radio" name="answer" id="a" class="answer" />
+                <label for="a" id="a_text">Answer</label>
+              </li>
+              <li>
+                <input type="radio" name="answer" id="b" class="answer" />
+                <label for="b" id="b_text">Answer</label>
+              </li>
+              <li>
+                <input type="radio" name="answer" id="c" class="answer" />
+                <label for="c" id="c_text">Answer</label>
+              </li>
+              <li>
+                <input type="radio" name="answer" id="d" class="answer" />
+                <label for="d" id="d_text">Answer</label>
+              </li>
             </ul>
           </div>
-          <div class="buttons">
-            <button id="btn">kiru</button>
-            <button id="btn2">tirkelu</button>
-          </div>
-        </nav>
+          <button id="submit">Submit</button>
+        </div>
       </div>
     </section>
     <!-- navbar end -->
@@ -86,5 +110,6 @@
         window.location = "tirkelu.html";
       });
     </script>
+    <script src="js/quzi.js"></script>
   </body>
 </html>

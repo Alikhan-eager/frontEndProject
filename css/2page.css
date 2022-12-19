@@ -21,8 +21,16 @@ section {
   max-width: 80%;
   margin: auto;
 }
+.container2 {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 /* navbar */
-button {
+nav button {
   width: 100px;
   text-align: center;
   padding: 6px 12px;
@@ -40,12 +48,17 @@ button {
   align-items: center;
   color: #000;
 }
+
 .brand-title {
   font-size: 1.5rem;
   margin: 0.5rem;
 }
 .btn {
   display: none;
+}
+.nav1 {
+  width: 80%;
+  margin: auto;
 }
 .navbar-links ul {
   margin: 0;
@@ -62,7 +75,7 @@ button {
   padding: 1rem;
   transition: 0.5s;
 }
-button:hover {
+nav button:hover {
   scale: 0.95;
 }
 .navbar-links li a:hover {
@@ -79,6 +92,9 @@ button:hover {
 }
 
 @media (max-width: 1060px) {
+  .nav1 {
+    width: 100%;
+  }
   .btn {
     display: block;
   }
@@ -380,4 +396,48 @@ hr {
     height: 100%;
     border-radius: 50%;
   }
+}
+
+.quiz-container {
+  border-radius: 10px;
+  width: 600px;
+  overflow: hidden;
+  background: #fff;
+}
+.quiz-header {
+  padding: 4rem;
+}
+h2 {
+  padding: 1rem;
+  text-align: center;
+}
+.quiz-header ul {
+  list-style: none;
+}
+.quiz-header ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.quiz-header ul li label {
+  cursor: pointer;
+}
+.quiz-container button {
+  background-color: red;
+  color: wheat;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 1.3rem;
+}
+.quiz-container button:hover {
+  background-color: darkred;
+}
+.quiz-container button:focus {
+  outline: none;
+  background-color: blueviolet;
+}
+
+.header {
 }
