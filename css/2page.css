@@ -211,6 +211,7 @@ button:hover {
   margin: auto;
   margin-top: 30px;
 }
+
 .staff-rows {
   display: flex;
   flex-direction: row;
@@ -229,19 +230,76 @@ button:hover {
   border-radius: 20px;
   padding: 10px;
 }
+.staff-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+hr {
+  margin-bottom: 10px;
+}
 .info-name {
   margin-top: 5px;
   padding: 10px;
   background-color: #fff;
   border-radius: 10px;
 }
-.info-name p {
-  padding: 8px 5px;
+/* ------------------ */
+.flip-card {
+  background-color: transparent;
+  width: auto;
+  height: 250px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #fff;
+  text-align: start;
+  color: black;
+}
+/* Style the back side */
+.flip-card-back {
+  background-color: #fff;
+  color: #000;
+  transform: rotateY(180deg);
+}
+.flip-card p {
+  padding: 7px 10px;
+}
+/* ----------- */
+/* .info-name p {
+  padding: 8px 5px;
+} */
 .avatar {
   align-self: center;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 150px;
   border: 3px solid #fff;
   border-radius: 50%;
   margin-bottom: 15px;
@@ -271,15 +329,55 @@ button:hover {
 .tochka {
   margin-left: 30px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1060px) {
+  .staff-col {
+    text-align: center;
+  }
+  .staff-col h1 {
+    font-size: 25;
+  }
   .staff-rows {
     flex-direction: column;
     gap: 20px;
+  }
+  .avatar {
+    /* width: 120px; */
+    width: 100%;
+    /* height: 120px; */
+    border-radius: 0%;
+    height: auto;
+  }
+  .avatar img {
+    width: 100%;
+    height: auto;
+    border-radius: 0%;
   }
   .content {
     width: 90%;
   }
   .pg1 {
     padding-bottom: 10px;
+  }
+}
+@media (max-width: 560px) {
+  .staff-col {
+    text-align: start;
+  }
+  .staff-col h1 {
+    font-size: 20;
+  }
+  .avatar {
+    align-self: center;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
   }
 }
