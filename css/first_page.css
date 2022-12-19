@@ -38,6 +38,18 @@ button {
   justify-content: space-between;
   align-items: center;
   color: #000;
+  animation: opacity 2.5s both;
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .brand-title {
   font-size: 1.5rem;
@@ -76,14 +88,54 @@ button:hover {
 }
 /* text box qow keldinoz */
 .text-box {
-  text-align: center;
+  /* text-align: center; */
   position: absolute;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  top: 30%;
+  left: 14%;
+  max-width: 700px;
+  line-height: 45px;
+  animation: scale 1.5s both;
+  
 }
 .text-box h1 {
   margin: 20px 0;
+  box-shadow: 5px 5px 5px black;
+  animation: scale 1.5s both;
+}
+.arrow{
+  position: absolute;
+  top: 77%;
+  left: 30%;
+}
+.sp{
+  text-transform: uppercase;
+  font-size: 20px;
+  color: whitesmoke;
+}
+@keyframes scale {
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.rocket{
+  position: absolute;
+  margin: 100px 100px 300px 800px;
+  position: relative;
+  animation: MoveUpDown 1s linear infinite;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
 }
 /* mobile section  1 */
 @media (max-width: 760px) {
@@ -260,13 +312,13 @@ button:hover {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-color: blue;
   border-radius: 25px 25px 25px 25px;
 }
 .card-image {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   padding: 3px;
   border: 3px solid white;
@@ -290,18 +342,18 @@ button:hover {
   color: #707070;
   text-align: center;
 }
-.btn {
+.btn3 {
   border: none;
   font-size: 16px;
   color: #fff;
   padding: 8px 16px;
   background-color: blue;
   border-radius: 6px;
-  margin: 14px;
+  margin: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.btn:hover {
+.btn3:hover {
   background: #009688;
 }
 .swiper-navBtn {
@@ -322,6 +374,7 @@ button:hover {
   left: 0;
 }
 .swiper-pagination-bullet {
+  
   background-color: #6e93f7;
   opacity: 1;
 }
