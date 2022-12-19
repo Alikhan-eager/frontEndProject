@@ -16,9 +16,11 @@
       src="https://kit.fontawesome.com/7560a9ef7c.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>
     <section class="headerali">
+      <div class="top" id="div1"><i class="fa-solid fa-arrow-right"></i></div>
       <div class="container">
         <nav class="navbar">
           <div class="brand-title">Qazaqwa soile</div>
@@ -47,11 +49,17 @@
             Bul course kimdeerge arnalgan :
             <br />
             <span class="punkt"> eger siz shet el azamaty bolsanyz,</span><br />
-           <span class="punkt"> qazaq tiinde soileuden qatelikter zhiberetin bolsanyz</span><br/>
+            <span class="punkt">
+              qazaq tiinde soileuden qatelikter zhiberetin bolsanyz</span
+            ><br />
             <span class="sp">onda bizge kosylynyz</span>
           </p>
         </div>
-        <img class="syzyk" src="https://static.tildacdn.com/tild3136-3832-4037-a633-653965303737/line.svg" alt="">
+        <img
+          class="syzyk"
+          src="https://static.tildacdn.com/tild3136-3832-4037-a633-653965303737/line.svg"
+          alt=""
+        />
         <img
           class="arrow"
           src="https://static.tildacdn.com/tild3538-3939-4336-b932-363665313166/Arrow.svg"
@@ -91,7 +99,9 @@
                     dolor nobis esse hic assumenda exercitationem voluptas
                     neque. Dolor, odit! Accusantium, quasi sed.
                   </p>
-                  <button class="btn3"><a href="bastau0.html"></a> Bastau</button>
+                  <button class="btn3">
+                    <a href="bastau0.html"></a> Bastau
+                  </button>
                 </div>
               </div>
 
@@ -257,7 +267,7 @@
     <script>
       const toggleb = document.getElementsByClassName("bars")[0];
       const awu = document.getElementById("btn");
-      
+
       const tirkelu = document.getElementById("btn2");
       const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
@@ -299,6 +309,23 @@
           },
         },
       });
+
+      $("#div1").hide();
+      window.addEventListener("scroll", () => {
+        var y = window.scrollY;
+        console.log(y);
+        if (y > 160) {
+          $("#div1").fadeIn("slow");
+        } else {
+          $("#div1").fadeOut("slow");
+        }
+      });
+      function scrollToTop() {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+      }
+      let arrow = document.getElementById("div1");
+      arrow.addEventListener("click", scrollToTop);
     </script>
   </body>
 </html>
