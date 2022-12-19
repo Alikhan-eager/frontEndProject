@@ -117,6 +117,15 @@ button:hover {
   font-size: 20px;
   color: whitesmoke;
 }
+.punkt{
+  color: black;
+  /* box-shadow: 5px 5px 5px 5px; */
+}
+.syzyk{
+  position: absolute;
+  top: 55%;
+  left: 4%;
+}
 @keyframes scale {
   50% {
     transform: scale(0.5);
@@ -129,7 +138,7 @@ button:hover {
   position: absolute;
   margin: 100px 100px 300px 800px;
   position: relative;
-  animation: MoveUpDown 1s linear infinite;
+  animation: MoveUpDown 3s linear infinite;
 }
 @keyframes MoveUpDown {
   0%,
