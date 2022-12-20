@@ -14,11 +14,11 @@ let cpassword = document.getElementById('cpassword').value;
         body:formdata
     })
     .then(result=>{
-
+    
         // if we want this data to be text
          return result.text()
          var x = result.text()
-         
+         console.log(x);
         // if we want this data to be JSON
         return result.json()
         

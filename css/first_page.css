@@ -208,6 +208,7 @@ button:hover {
     font-size: 10px;
   }
 }
+
 /* navbar end */
 /* footer */
 .footer {
@@ -422,7 +423,7 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-.fa-solid {
+.fa-arrow-right {
   font-size: 30px;
   color: white;
   transform: rotate(270deg);
