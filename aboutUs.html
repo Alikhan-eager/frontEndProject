@@ -13,9 +13,10 @@
     ></script>
   </head>
   <body>
-    <!-- navbar -->
+  
     <section class="pg1">
       <div class="container">
+         <!-- navbar -->
         <nav class="navbar">
           <div class="brand-title">Qazaqwa soile</div>
           <div class="bars">
@@ -35,8 +36,10 @@
             <button id="btn2">tirkelu</button>
           </div>
         </nav>
+        <!-- navbar end -->
       </div>
     </div>
+    <!-- content -->
     <div class="center">
       <div class="content">
         <div class="staff">
@@ -46,6 +49,7 @@
           </ul>
         </div>
         <div class="staff-rows">
+          <!--avatar  1-->
           <div class="staff-col">
             <div class="avatar">
               <img src="https://picsum.photos/800/600" alt="" />
@@ -74,6 +78,9 @@
             </div>
             <!-- flip card end -->
           </div>
+          <!-- avatar 1 end -->
+
+          <!--avatar 2-->
           <div class="staff-col">
             <div class="avatar">
               <img src="https://picsum.photos/800/600" alt="" />
@@ -101,8 +108,11 @@
                 </div>
               </div>
             </div>
-            <!-- flip card -->
+            <!-- flip card end -->
           </div>
+          <!-- avatar 2 end -->
+
+          <!--avatar 1-->
           <div class="staff-col">
             <div class="avatar">
               <img src="https://picsum.photos/800/600" alt="" />
@@ -130,16 +140,16 @@
                 </div>
               </div>
             </div>
-            <!-- flip card -->
+            <!-- flip card end -->
           </div>
+          <!--avatar 3 end-->
         </div>
         </div>
-      </div>
-     
-    </section>
-    <!-- navbar end -->
+        
+    <!-- content end -->
 
-    <!-- content -->
+    </section>
+
 
     <!-- footer -->
     <section class="footer">
@@ -172,21 +182,11 @@
       </div>
     </section>
     <!-- footer end -->
-    <script>
-      const toggleb = document.getElementsByClassName("bars")[0];
-      const awu = document.getElementById("btn");
-      const tirkelu = document.getElementById("btn2");
-      const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
-      toggleb.addEventListener("click", () => {
-        navbarLinks.classList.toggle("active");
-      });
-      awu.addEventListener("click", () => {
-        window.location = "awu.html";
-      });
-      tirkelu.addEventListener("click", () => {
-        window.location = "tirkelu.html";
-      });
+    <!-- js -->
+    <script src="js/aboutUs.js">
     </script>
+    <!-- js end -->
+
   </body>
 </html>
